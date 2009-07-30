@@ -8,6 +8,7 @@ state.pattern.auto.shooter
 * wish list: collective intelligence as in the biology.
 * wish list: use antler like tool to modify self code to be 
   self-monitoring and self-evolving.
+* 
 
 
 links:
@@ -18,8 +19,14 @@ http://github.com/guides/providing-your-ssh-key
 
 
 
-* Why do I lack new idea?
+* Q & A: 
+Q: Why do I lack new idea?
 A: I am not totally in it. Try to exploit any knowledge instead of
    always being a beginner.
    
-   
+Q: how to implement status change between auto-pilot and human op?
+   And auto-pilot has sub status, how to group them together? 
+A: 
+
+Q: how to do unit test for status design pattern?
+A: 

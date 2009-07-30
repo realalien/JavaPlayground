@@ -33,6 +33,79 @@ public class GunController extends BaseGameEntity{
 			presentGunState.execute(this);
 		}
 	}
+
+	public static void ceaseFile() {
+		// close 
+		
+		// open protection
+		
+	}
+
+	public void calibrate() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void checkArmor() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void shoot() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean isOverHeated() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean isCartridgeEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean isArmorRunningLow() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean isArmorEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean isHumanOperating() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean isEnemySpotted() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean isPreemptedMode() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean isDefenseMode() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public void changeCartridge() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean isAttacking() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }
 
 
