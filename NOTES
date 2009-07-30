@@ -19,7 +19,13 @@ http://github.com/guides/providing-your-ssh-key
 
 
 
-* Q & A: 
+* Q & A:
+
+
+
+
+20090730
+-------- 
 Q: Why do I lack new idea?
 A: I am not totally in it. Try to exploit any knowledge instead of
    always being a beginner.
@@ -30,3 +36,6 @@ A:
 
 Q: how to do unit test for status design pattern?
 A: 
+
+Q: how Unreal implements the state? like "defend the flag" or "explore map", how quickly the state change?
+A:
