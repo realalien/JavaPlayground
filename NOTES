@@ -51,6 +51,14 @@ property, when state changes, that property must be always be provoked.
 Interesting things may happen that we have list of global state which may overshadow
 the real status change? 
 
+Q: in chapter 'Adding Messaging Capabilities to Your FSM', the messagin seems to be 
+not nature in the first thought
+e.g.  A wizard throws a fireball at an orc.  IF orc does not notice? or wizard tricks or use tactics?
+e.g.  A football player makes a pass to a teammate. IF a intended missing or what?
+e.g.  
+e.g. 
+Then how to implement?
+
 20090730
 -------- 
 Q: Why do I lack new idea?
