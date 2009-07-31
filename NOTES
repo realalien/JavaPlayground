@@ -22,7 +22,34 @@ http://github.com/guides/providing-your-ssh-key
 * Q & A:
 
 
+20090731
+--------
+Q: As in the C2,'Making the State Base Class Reusable',
+   I saw template in cpp equals Java's interface or superclass, how can I reuse code
+   in java?
+A: 
 
+tips: due to the limit free space on github, <300M. It is not suggested that
+put the .jar files onto the source, keep jar info on .classpath, thus resolve
+by hands.
+
+
+Q: there is no unit test case, how shall I refactor with new ideas? Just follow
+the book? Unpleasant!
+hint: I guess we have no real behavior, compare with string is useless and waste
+of time!
+A: 
+
+
+Q: why cpp functions tends to use keyword 'const' for functions?
+hint: see more articles on 'const'!
+A: 
+
+ESP: see from the UML, Figure 2.4, 
+The way we introduce the global state(sharable state change), is to use a instance
+property, when state changes, that property must be always be provoked.
+Interesting things may happen that we have list of global state which may overshadow
+the real status change? 
 
 20090730
 -------- 

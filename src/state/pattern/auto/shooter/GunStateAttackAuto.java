@@ -63,7 +63,7 @@ public class GunStateAttackAuto implements GunState {
 	@Override
 	public void exit(GunController gs) {
 		System.out.println("Cease fire!");
-		GunController.ceaseFile();
+		gs.ceaseFile();
 	}
 
 }

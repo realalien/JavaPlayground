@@ -10,31 +10,58 @@ package state.pattern.auto.shooter;
 public class GunController extends BaseGameEntity{ 
 	// TODO: extends Weapon<common properties>
 	//       implements <standards of a weapon>
-
-	public GunState presentGunState;
 	
-	//TODO: other properties
-
+// Deprecated: delegate to the stateMachine.	
+//	private GunState globalGunState ;  // to avoid status duplicate in most subclasses of GunState
+//	private GunState presentGunState;
+//	private GunState previousGunState ;
+	
+	//TODO: other properties 
+	
+	//Q: why should be 'final'?
+	private GunStateMachine stateMachine ;
+	
+	//ctor
+	public GunController(){
+		// set flags and init values
+		this.stateMachine = new GunStateMachine(this);
+		this.stateMachine.setCurrentsGunStatus(GunStatePatrol.getInstance());
+		this.stateMachine.setGlobalGunStatus(GunStateGlobal.getInstance());
+	}
+	
 	public void changeGunState(GunState newGunState) {
-		assert (presentGunState != null && newGunState != null);
+		assert (newGunState != null);
 		
-		presentGunState.exit(this);
-		
-		presentGunState = newGunState;
-		
-		newGunState.enter(this);
+		this.stateMachine.getCurrentsGunStatus().exit(this);
+		this.stateMachine.setCurrentsGunStatus(newGunState);
+		this.stateMachine.getCurrentsGunStatus().enter(this);
+//		assert (presentGunState != null && newGunState != null);
+//		presentGunState.exit(this);
+//		presentGunState = newGunState;
+//		newGunState.enter(this);
+	}
+	
+	public GunStateMachine getStateMachine() {
+		return stateMachine;
 	}
 
+	public void RevertToPreviousState(){
+		this.stateMachine.RevertToPreviousState();
+	}
+	
+	
 	@Override
 	public void update() {
 		// shall I clean and re-calibrate here? 
+		this.stateMachine.update();
 		
-		if (presentGunState != null){
-			presentGunState.execute(this);
-		}
+		//deprected due to intro of stateMachine
+//		if (presentGunState != null){
+//			presentGunState.execute(this);
+//		}
 	}
 
-	public static void ceaseFile() {
+	public void ceaseFile() {
 		// close 
 		
 		// open protection

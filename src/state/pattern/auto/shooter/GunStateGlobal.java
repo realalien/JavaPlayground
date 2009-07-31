@@ -1,12 +1,18 @@
 package state.pattern.auto.shooter;
 
-public class GunStateHide implements GunState {
 
-	public static GunStateHide instance;
-	private GunStateHide() {}
-	public static GunStateHide getInstance(){
+/**
+ * 
+ * A demo class which represents the state like 'going to the bathroom',
+ * that can be reuse in changing of state.
+ * */
+public class GunStateGlobal implements GunState {
+
+	public static GunStateGlobal instance;
+	private GunStateGlobal() {}
+	public static GunStateGlobal getInstance(){
 		if (instance == null){
-			instance = new GunStateHide();
+			instance = new GunStateGlobal();
 		}
 		return instance;
 	}
