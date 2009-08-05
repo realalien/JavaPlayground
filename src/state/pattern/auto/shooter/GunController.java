@@ -16,12 +16,16 @@ public class GunController extends BaseGameEntity{
 //	private GunState presentGunState;
 //	private GunState previousGunState ;
 	
-	//TODO: other properties 
+	//TODO: other properties, also get update in update()
 	
 	//Q: why should be 'final'?
 	private GunStateMachine stateMachine ;
 	
 	//ctor
+	public GunController(int id){
+		 this.id = id ;		
+	}
+	
 	public GunController(){
 		// set flags and init values
 		this.stateMachine = new GunStateMachine(this);

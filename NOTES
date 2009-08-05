@@ -21,6 +21,15 @@ http://github.com/guides/providing-your-ssh-key
 
 * Q & A:
 
+20090804
+--------
+* Yesterday I learned about the workflow impl. in ruby, see the difference
+ on impl. between state pattern and states in workflow,
+
+* why in cpp, private 'id' property can be used in subclasses? But Java couldn't
+
+
+
 
 20090731
 --------
