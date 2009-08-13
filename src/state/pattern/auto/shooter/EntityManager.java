@@ -25,7 +25,7 @@ public class EntityManager {
 	}
 
 	// returns a pointer to the entity with the ID given as a parameter
-	public BaseGameEntity GetEntityFromID(int id) {
+	public static BaseGameEntity GetEntityFromID(int id) {
 		
 		return null;
 	}

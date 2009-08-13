@@ -1,6 +1,8 @@
 package state.pattern.auto.shooter;
 
 public class Telegram {
+
+
 	// the entity that sent this telegram
 	int sender;
 
@@ -16,15 +18,57 @@ public class Telegram {
 	// the message should be dispatched.
 	double dispatchTime;
 
-	public Telegram(int sender, int receiver, int msg, double dispatchTime) {
+	Object extraInfo ;
+	
+	public Telegram(int sender, int receiver, int msg, double dispatchTime, Object extraInfo) {
 		this.sender = sender;
 		this.receiver = receiver;
 		this.msg = msg;
 		this.dispatchTime = dispatchTime;
+		this.extraInfo = extraInfo;
 	}
 
 	// any additional information that may accompany the message
 	// TODO: how to behavior like CPP with extra data?
 	// void* ExtraInfo;
 
+	public int getSender() {
+		return sender;
+	}
+
+	public void setSender(int sender) {
+		this.sender = sender;
+	}
+
+	public int getReceiver() {
+		return receiver;
+	}
+
+	public void setReceiver(int receiver) {
+		this.receiver = receiver;
+	}
+
+	public int getMsg() {
+		return msg;
+	}
+
+	public void setMsg(int msg) {
+		this.msg = msg;
+	}
+
+	public double getDispatchTime() {
+		return dispatchTime;
+	}
+
+	public void setDispatchTime(double dispatchTime) {
+		this.dispatchTime = dispatchTime;
+	}
+
+	public Object getExtraInfo() {
+		return extraInfo;
+	}
+
+	public void setExtraInfo(Object extraInfo) {
+		this.extraInfo = extraInfo;
+	}
 }
