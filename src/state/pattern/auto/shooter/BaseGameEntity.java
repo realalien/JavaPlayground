@@ -1,6 +1,6 @@
 package state.pattern.auto.shooter;
 
-public abstract class BaseGameEntity implements CanBeUpdate {
+public abstract class BaseGameEntity implements CanBeUpdate, CanHandleMsg{
 
 	// every entity has a unique identifying number
 	protected int id; 

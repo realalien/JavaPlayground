@@ -137,6 +137,11 @@ public class GunController extends BaseGameEntity{
 		return false;
 	}
 
+	@Override
+	public void handleMsg(Telegram msg) {
+		
+	}
+
 }
 
 
